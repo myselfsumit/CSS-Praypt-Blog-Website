@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 65vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_desc{
+    max-width: 568px;
+    color: rgb(70, 64, 64);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 285px));
+    justify-content: center;
+}
+
+/* @media (min-width:650px){
+    .main_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1080px){
+    .main_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1870px){
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+} */
+
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(195, 190, 190);
+    border-radius: 8px;
+}
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+@media (min-width:768px){
+    .card_image_container{
+        height: 11rem;
+    }
+}
+
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title_container{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card_container :hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(24, 22, 22);
+}
+
+.card_title_container :hover .card_title{
+    color: rgb(65, 65, 187);
+}
+
+/* Extra Add On Kiye Hai... */
+
+.card_desc{
+    margin-left: 0.4rem;
+    color: rgb(61, 53, 53);
+    font-size: 1rem;
+}
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.author_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author_avtar_container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(108, 100, 100);
+    border-radius: 50%;
+    background-color: rgb(218, 212, 212);
+}
+
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.author_name{
+    color: rgb(66, 66, 205);
+}
+
+.author_date{
+    color: rgb(49, 44, 44);
+}
+
+.card_tag_container{
+    font-size: 0.79rem;
+    border: 1px solid rgb(58, 53, 53);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    color: grey;
+    padding: 0.25rem 0.5rem;
+}
